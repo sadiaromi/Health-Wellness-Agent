@@ -30,7 +30,7 @@ health/
 ├── guardrail.py # Input/output validation
 ├── hooks.py # Lifecycle event logging
 
-
+```
 ---
 
 # 🛠 Setup & Run the App
