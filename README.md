@@ -8,29 +8,28 @@ This agent helps users plan their fitness and diet goals, generate personalized 
 
 healthy/
 
-agent_config.py       # Main agent logic (tool selection, routing)
-context.py            # User session state (goal, diet, progress)
-streamlit_app.py      # Streamlit frontend with PDF export
-.env                  # API key stored here
+          agent_config.py       # Main agent logic (tool selection, routing)
+          context.py            # User session state (goal, diet, progress)
+          streamlit_app.py      # Streamlit frontend with PDF export
+          .env                  # API key stored here
 
-agents/
-escalation_agent.py    # Escalate to human
-injury_support.py      # Injury-related support agent
-nutrition_expert.py    # Dietary restrictions expert
+          agents/
+                escalation_agent.py    # Escalate to human
+                injury_support.py      # Injury-related support agent
+                nutrition_expert.py    # Dietary restrictions expert
 
- shared/
-goal_analyzer.py       # Parses goals like "lose 5kg in 2 months"
-meal_planner.py        # Generates weekly meal plan
-workout_recommender.py # Suggests workouts based on goal
-scheduler.py           # Schedules weekly check-ins
-tracker.py             # Tracks progress updates
+             shared/
+                goal_analyzer.py       # Parses goals like "lose 5kg in 2 months"
+                meal_planner.py        # Generates weekly meal plan
+                workout_recommender.py # Suggests workouts based on goal
+                scheduler.py           # Schedules weekly check-ins
+                tracker.py             # Tracks progress updates
 
- tools/
-tool.py                # Base Tool class
+           tools/
+                tool.py                # Base Tool class
 
-guardrail.py              # Input/output validation
-hooks.py                  # Lifecycle event logging
-
+          guardrail.py              # Input/output validation
+          hooks.py                  # Lifecycle event logging
 
 ---
 
@@ -105,17 +104,19 @@ streamlit run streamlit_app.py
 
 # 💡 Example Conversation Flow
 
-🧰 *User*: I want to lose 5kg in 2 months  
+- *User*: I want to lose 5kg in 2 months  
   â†’ *Tool Used*: GoalAnalyzerTool structures the goal  
 
-🧰 *User*: Iâ€™m vegetarian  
+- *User*: Iâ€™m vegetarian  
   â†’ *Tool Used*: MealPlannerTool provides a 7-day meal plan  
 
-🧠 *User*: I have back pain  
+- *User*: I have back pain  
   â†’ *Agent Triggered*: InjurySupportAgent responds  
 
-🧠 *User*: I want a real coach  
+- *User*: I want a real coach  
   â†’ *Agent Triggered*: EscalationAgent connects to a human  
+
+
 
 ---
 
