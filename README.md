@@ -4,6 +4,7 @@ An AI-powered assistant built using the **OpenAI-compatible Agents SDK**.
 This agent helps users plan their fitness and diet goals, generate personalized meal/workout plans, track progress, and escalate to specialized agents — all through a **Streamlit web app**.
 
 # 📁 Folder Structure
+```
 
 health/
 ├── agent_config.py # Main agent logic (tool selection, routing)
