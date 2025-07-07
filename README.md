@@ -104,17 +104,17 @@ streamlit run streamlit_app.py
 
 # 💡 Example Conversation Flow
 
-- *User*: I want to lose 5kg in 2 months  
-  â†’ *Tool Used*: GoalAnalyzerTool structures the goal  
+- 🧰 *User*: I want to lose 5kg in 2 months  
+      *Tool Used*: GoalAnalyzerTool structures the goal  
 
-- *User*: Iâ€™m vegetarian  
-  â†’ *Tool Used*: MealPlannerTool provides a 7-day meal plan  
+- 🧰 *User*: Iâ€™m vegetarian  
+     *Tool Used*: MealPlannerTool provides a 7-day meal plan  
 
-- *User*: I have back pain  
-  â†’ *Agent Triggered*: InjurySupportAgent responds  
+- 🧠 *User*: I have back pain  
+    *Agent Triggered*: InjurySupportAgent responds  
 
-- *User*: I want a real coach  
-  â†’ *Agent Triggered*: EscalationAgent connects to a human  
+- 🧠 *User*: I want a real coach  
+      *Agent Triggered*: EscalationAgent connects to a human  
 
 
 
