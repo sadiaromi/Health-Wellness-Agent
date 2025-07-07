@@ -34,7 +34,7 @@ health/
 
 ## 🔹 Step 1: Create & Activate Virtual Environment
 
-bash
+uv venv
 # For Windows
 .\venv\Scripts\activate
 
