@@ -7,29 +7,30 @@ This agent helps users plan their fitness and diet goals, generate personalized 
 
 
 healthy/
+â”‚
+â”œâ”€â”€ agent_config.py       # Main agent logic (tool selection, routing)
+â”œâ”€â”€ context.py            # User session state (goal, diet, progress)
+â”œâ”€â”€ streamlit_app.py      # Streamlit frontend with PDF export
+â”œâ”€â”€ .env                  # API key stored here
+â”‚
+â”œâ”€â”€ agents/
+â”‚   â”œâ”€â”€ escalation_agent.py    # Escalate to human
+â”‚   â”œâ”€â”€ injury_support.py      # Injury-related support agent
+â”‚   â”œâ”€â”€ nutrition_expert.py    # Dietary restrictions expert
+â”‚
+â”œâ”€â”€ shared/
+â”‚   â”œâ”€â”€ goal_analyzer.py       # Parses goals like "lose 5kg in 2 months"
+â”‚   â”œâ”€â”€ meal_planner.py        # Generates weekly meal plan
+â”‚   â”œâ”€â”€ workout_recommender.py # Suggests workouts based on goal
+â”‚   â”œâ”€â”€ scheduler.py           # Schedules weekly check-ins
+â”‚   â”œâ”€â”€ tracker.py             # Tracks progress updates
+â”‚
+â”œâ”€â”€ tools/
+â”‚   â”œâ”€â”€ tool.py                # Base Tool class
+â”‚
+â”œâ”€â”€ guardrail.py              # Input/output validation
+â”œâ”€â”€ hooks.py                  # Lifecycle event logging
 
-          agent_config.py       # Main agent logic (tool selection, routing)
-          context.py            # User session state (goal, diet, progress)
-          streamlit_app.py      # Streamlit frontend with PDF export
-          .env                  # API key stored here
-
-          agents/
-                escalation_agent.py    # Escalate to human
-                injury_support.py      # Injury-related support agent
-                nutrition_expert.py    # Dietary restrictions expert
-
-             shared/
-                goal_analyzer.py       # Parses goals like "lose 5kg in 2 months"
-                meal_planner.py        # Generates weekly meal plan
-                workout_recommender.py # Suggests workouts based on goal
-                scheduler.py           # Schedules weekly check-ins
-                tracker.py             # Tracks progress updates
-
-           tools/
-                tool.py                # Base Tool class
-
-          guardrail.py              # Input/output validation
-          hooks.py                  # Lifecycle event logging
 
 ---
 
