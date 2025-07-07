@@ -38,11 +38,11 @@ uv venv
 .venv\Scripts\activate  # For Windows
 
 ### 🔹 Step 2: Add Your API Key to .env File
-
+```bash
 OPENAI_API_KEY=your-api-key-here
 
 ### 🔹 Step 3: Run the Streamlit App
-
+```bash
 streamlit run streamlit.py
 
 
