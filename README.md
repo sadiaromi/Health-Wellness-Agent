@@ -24,8 +24,6 @@ health/
 │ ├── scheduler.py # Schedules weekly check-ins
 │ └── tracker.py # Tracks progress updates
 
-├── tools/
-│ └── tool.py # Base Tool class
 
 ├── guardrail.py # Input/output validation
 ├── hooks.py # Lifecycle event logging
