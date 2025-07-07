@@ -11,6 +11,8 @@ health/
 ├── context.py # User session state (goal, diet, progress)
 ├── streamlit_app.py # Streamlit frontend with PDF export
 ├── .env # API key stored here
+├── guardrail.py # Input/output validation
+├── hooks.py # Lifecycle event logging
 
 ├── agents/
 │ ├── escalation_agent.py # Escalate to human
@@ -24,9 +26,6 @@ health/
 │ ├── scheduler.py # Schedules weekly check-ins
 │ └── tracker.py # Tracks progress updates
 
-
-├── guardrail.py # Input/output validation
-├── hooks.py # Lifecycle event logging
 
 ```
 ---
