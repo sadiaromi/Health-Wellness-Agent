@@ -55,9 +55,9 @@ streamlit run streamlit_app.py
 
 # 🚀 Features
 
-💬 Health-related conversation
-🔄 Dynamic responses from tools/agents
-📄 Option to export response as a PDF
+- 💬 Health-related conversation
+- 🔄 Dynamic responses from tools/agents
+- 📄 Option to export response as a PDF
 
 ---
 
