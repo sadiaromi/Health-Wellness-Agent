@@ -107,7 +107,7 @@ streamlit run streamlit_app.py
 - 🧰 *User*: I want to lose 5kg in 2 months  
       *Tool Used*: GoalAnalyzerTool structures the goal  
 
-- 🧰 *User*: Iâ€™m vegetarian  
+- 🧰 *User*: I   m vegetarian  
      *Tool Used*: MealPlannerTool provides a 7-day meal plan  
 
 - 🧠 *User*: I have back pain  
